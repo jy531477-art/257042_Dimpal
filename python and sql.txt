@@ -1,0 +1,287 @@
+
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+select*from personal_info;
+
+select name from personal_info;
+
+desc personal_info;
+
+
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+select*from personal_info;
+
+select name from personal_info where name> "nagin";
+desc personal_info;
+
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+select*from personal_info;
+
+select * from personal_info where name> "nagin";
+desc personal_info;
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+select*from personal_info;
+
+select * from personal_info where city= "nagpur";
+desc personal_info;
+
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+
+update personal_info set name = "hih" where age = 19;
+select*from personal_info;
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+
+delete from personal_info where age = 15;
+select*from personal_info;
+
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+
+
+select*from personal_info where age >=18 and age>= 15 ;
+
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+
+
+select*from personal_info where age >=18 or age<= 15 ;
+
+
+
+
+
+CREATE TABLE personal_info(
+name varchar(100) ,
+age int ,
+city varchar(100)
+);
+insert into personal_info(name , age, city) VALUES
+("dimpal",18,"haryana"),
+("prachi" ,15,"jupiter"),
+("apurva",17,"sun"),
+("nikki" , 20 ,"up"),
+("nagin" , 19 ,"nagpur");
+
+
+select*from personal_info where not age >=18 ;
+
+name       age         city           
+---------- ----------- ---------------
+prachi         15        jupiter        
+apurva         17         sun 
+
+
+
+
+CREATE TABLE EMPLOYEE (
+  empId int,
+  name varchar(15),
+  dept varchar(10)
+);
+
+
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (1, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (2, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'Ava', 'Sales');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'rahul', 'Student');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'Abhay', 'accounting');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'prachi', 'teacher');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'nikki', 'teacher');
+SELECT * FROM EMPLOYEE where name like '_a%';
+
+empId       name            dept      
+----------- --------------- ----------
+          2 Dave            Accounting
+          3 rahul           Student
+
+
+
+CREATE TABLE EMPLOYEE (
+  empId int,
+  name varchar(15),
+  dept varchar(10)
+);
+
+
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (1, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (2, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'Ava', 'Sales');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'rahul', 'Student');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'Abhay', 'accounting');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'prachi', 'teacher');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'nikki', 'teacher');
+SELECT * FROM EMPLOYEE where name like 'a%';
+
+empId       name            dept      
+----------- --------------- ----------
+          3 Ava             Sales     
+          3 Abhay           accounting
+
+CREATE TABLE EMPLOYEE (
+  empId int,
+  name varchar(10),
+  dept varchar(10)
+);
+
+
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (1, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (2, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'Ava', 'Sales');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (4, 'rahul', 'Student');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (5, 'Abhay', 'accounting');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (6, 'prachi', 'teacher');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (7, 'nikki', 'teacher');
+SELECT * FROM EMPLOYEE where name like 'a%';
+select* from EMPLOYEE order by name ;
+select*from EMPLOYEE order by name desc;
+
+empId       name       dept      
+----------- ---------- ----------
+          3 Ava        Sales     
+          5 Abhay      accounting
+empId       name       dept      
+----------- ---------- ----------
+          5 Abhay      accounting
+          3 Ava        Sales     
+          1 Clark      Sales     
+          2 Dave       Accounting
+          7 nikki      teacher   
+          6 prachi     teacher   
+          4 rahul      Student   
+empId       name       dept      
+----------- ---------- ----------
+          4 rahul      Student   
+          6 prachi     teacher   
+          7 nikki      teacher   
+          2 Dave       Accounting
+          1 Clark      Sales     
+          3 Ava        Sales     
+          5 Abhay      accounting
+
+
+
+
+CREATE TABLE EMPLOYEE (
+  empId int,
+  name varchar(10),
+  dept varchar(10)
+);
+
+
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (1, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (2, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (3, 'Ava', 'Sales');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (4, 'rahul', 'Student');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (5, 'Abhay', 'accounting');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (6, 'prachi', 'teacher');
+INSERT INTO EMPLOYEE(empId,name,dept) VALUES (7, 'nikki', 'teacher');
+--SELECT * FROM EMPLOYEE where name like 'a%';
+
+select*from EMPLOYEE limit 4;
+
+select count(*) , avg(empId) , max(empId),min(empId) from EMPLOYEE;
+
+
+Output:
+
+empId       name            dept      
+----------- --------------- ----------
+          2 Dave            Accounting
+          1 Clark           Sales     
+          3 Ava             Sales     
+                                               
+----------- ----------- ----------- -----------
+          3           2           3           1
